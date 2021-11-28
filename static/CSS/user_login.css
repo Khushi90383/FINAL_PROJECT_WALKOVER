@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --col1:rgb(108, 220, 248);      /* light blue*/
+    --col2:rgb(0, 0, 0);           /* black */ 
+    --col3:rgb(247, 246, 244);    /*  slight white */
+    --col4:rgb(13, 52, 61);       /* slight black */
+    --col5:rgb(255, 255, 255);   /* white */
+}
+.header{
+    background-color: var(--col2);
+    color: var(--col1);
+    text-align: center;
+}
+.main{
+    padding:5% 20%;
+    background-color: var(--col4);
+    color:var(--col3);
+}
+
+.rules{
+    /* text-align: center; */
+    /* align-content: center; */
+    padding:15px;
+    background-color: var(--col1);
+}
+.footer{
+    background-color: var(--col2);
+    text-align: center;
+    color: var(--col5);
+}

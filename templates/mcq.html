@@ -10,7 +10,21 @@
 </head>
 <body>
     <script type="text/javascript">
+        var val = 20;
 
+    setInterval(function() {
+    val--;
+
+
+    if (val >= 0) {
+        id = document.getElementById("timer");
+        id.innerHTML = val;
+    }
+    if(val==0){
+        document.getElementById("next").click();
+    }
+    },1000);
+    
         function fun()
         {
             var a = document.querySelector('input[name="answer"]:checked').value;
@@ -57,6 +71,9 @@
                 <button id="submit" onclick="fun_2()">Submit</button> -->
                 <a href="/quiz" id="next" class="submitBtn" type="button" onclick="fun()">Next</a>
                 <a href="/submit" id="submit" type="button" class="submitBtn" onclick="fun_2()">Submit</a>
+            </div>
+            <div class="final-score">
+
             </div>
         </div>
     </div>

@@ -6,10 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <link rel="stylesheet" href="../static/CSS/mcq.css">
-    <script src="../static/JS/mcq.js"></script>
-    <script src="../static/JS/mcq1.js"></script>
+    <script src="mcq.js"></script>
 </head>
 <body>
+    <script type="text/javascript">
+
+        function fun()
+        {
+            var a = document.querySelector('input[name="answer"]:checked').value;
+    
+            document.getElementById("next").href="/quiz?option="+a;
+            console.log(a)
+        }
+       
+        function fun_1()
+        {
+            var a = document.querySelector('input[name="radio"]:checked').value;
+            document.getElementById("submit").href="/submit?option="+a;
+            console.log(a)
+        }
+        
+    </script>
     <div class="main-div">
         <div class="outer-div">
             <div class="timer" id="timer">20</div>
@@ -36,8 +53,10 @@
                 </li>
             </ul>
             <div class="buttons">
-                <button id="next">Next</button>
-                <button id="submit">Submit</button>
+                <!-- <button id="next" onclick="fun()">Next</button>
+                <button id="submit" onclick="fun_2()">Submit</button> -->
+                <a href="/quiz" id="next" class="submitBtn" type="button" onclick="fun()">Next</a>
+                <a href="/submit" id="submit" type="button" class="submitBtn" onclick="fun_2()">Submit</a>
             </div>
         </div>
     </div>

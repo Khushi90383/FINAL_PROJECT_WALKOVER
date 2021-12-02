@@ -47,6 +47,8 @@ input{
 }
 .buttons{
     margin-top: 2rem;
+    display: inline-block;
+    
     
 }
 #submit{
@@ -55,6 +57,9 @@ input{
     /* outline:none; */
     border:0px white;
     border-radius: 1rem;
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
 }
 #next{
     padding: 1rem;
@@ -62,6 +67,9 @@ input{
     /* outline:none; */
     border:0px white;
     border-radius: 1rem;
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
 }
 #submit:hover{
     padding: 1rem;
